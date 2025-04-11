@@ -1,0 +1,12 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Adam Elfsborg
+	email = adamelfsborg.dev@gmail.com
+[pull]
+	rebase = true 
+[core]
+	editor = vim
+[fetch]
+	prune = true
+[init]
+	defaultBranch = main
