@@ -72,6 +72,20 @@ return {
           capabilites = capabilites,
         })
       end,
+      ["gopls"] = function()
+        lspconfig["gopls"].setup({
+          capabilites = capabilites,
+          settings = {
+            gopls = {
+              analyses = {
+                unusedparams = true,
+              },
+              staticcheck = true,
+            },
+          },
+        })
+
+      end,
       [ "lua_ls" ] = function()
         lspconfig["lua_ls"].setup({
           capabilites = capabilites,
